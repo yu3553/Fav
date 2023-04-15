@@ -64,20 +64,20 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Lv</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
-                    if (x != info[i].Lv) {
+                    if (x != info[i].level) {
                         if (obj_sep != null) {
                             obj_sep.html("<td colspan='4'>" + "<b>" + mark + x + " (" + count +
                                 "譜面)</b></td>");
                         }
-                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].Lv +
+                        obj_sep = $("<tr class='table-dark' style='text-align:center' id='" + mark + info[i].level +
                             "'></tr>");
                         obj_sep.appendTo(obj);
                         count = 0;
-                        x = info[i].Lv;
+                        x = info[i].level;
                     }
 
                     var str = $("<tr></tr>");
@@ -89,10 +89,10 @@
                     $("<td width='41%'>" +
                         "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsmd5=" + info[
                             i]
-                        .md5 + "' target='_blank'>" + info[i].Title + "</a></td>").appendTo(str);
+                        .md5 + "' target='_blank'>" + info[i].title + "</a></td>").appendTo(str);
 
                     // Artist
-                    $("<td width='41%'>" + info[i].Artist + "</td>").appendTo(str);
+                    $("<td width='41%'>" + info[i].artist + "</td>").appendTo(str);
 
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
