@@ -64,7 +64,7 @@
                 var obj = $("#table_int");
 
                 obj.html("");
-                $("<thead class='table-dark'><tr><th>Level</th><th>Title</th><th>Artist</th><th>Comment</th><th>譜面</th></tr></thead><tbody>")
+                $("<thead class='table-dark'><tr><th>LV</th><th>TITLE</th><th>ARTIST</th><th>Comment</th><th>CHART</th></tr></thead><tbody>")
                     .appendTo(obj);
                 var obj_sep = null;
                 for (var i = 0; i < info.length; i++) {
@@ -96,7 +96,6 @@
 
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
-                    str.appendTo(obj);
                     
                     // CHART
                     $("<td width='5%'>" +
