@@ -96,12 +96,13 @@
 
                     // Comment
                     $("<td width='10%'>" + info[i].comment + "</td>").appendTo(str);
+                    str.appendTo(obj);
                     
                     // CHART
                     $("<td width='5%'>" +
                         "<a href='http://www.ribbit.xyz/bms/score/view?md5=" + info[i]
                         .md5 + "' target='_blank'>" + info[i].CHART + "</a></td>").appendTo(str);
-                    str.appendTo(obj);
+                    //str.appendTo(obj);
 
                     count++;
 
