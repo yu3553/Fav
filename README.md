@@ -1,2 +1,2 @@
-# Chthonian難易度表 Expand
-BMSの難易度表
+# よくプレイするBMSまとめ
+名称通り
