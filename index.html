@@ -2,7 +2,7 @@
 <html lang="ja">
 
 <head>
-    <title>いちばんいいBMS</title>
+    <title>ゆいらぶ難易度表</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +19,7 @@
     <header class="mb-3">
         <nav class="navbar navbar-dark bg-dark">
             <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">いちばんいいBMS</span>
+                <span class="navbar-brand mb-0 h1">ゆいらぶ難易度表</span>
             </div>
         </nav>
     </header>
@@ -34,7 +34,7 @@
         <div class="alert alert-secondary mb-3" role="alert">
             <p>☆9まで整理済み。順次譜面追加予定。</p>
             <hr>
-            <p>2024/1/2/更新。</p>
+            <p>2024/1/27/更新。</p>
         </div>
 
 
@@ -94,7 +94,7 @@
                     str.appendTo(obj);
                     
                     // CHART
-                    $("<td width='4%'>" +　"<a href='http://www.ribbit.xyz/bms/score/view?md5=" + info[i].md5 + "' target='_blank'>" + info[i].CHART + "</a></td>").appendTo(str);
+                    $("<td width='4%'>" +　"<a href='https://mocha-repository.info/song.php?sha256=" + info[i].SHA256 + "' target='_blank'>" + info[i].Mocha + "</a></td>").appendTo(str);
                     //str.appendTo(obj);
 
                     count++;
